@@ -16,7 +16,7 @@ This will create a *presentation.html* file containing [revealjs](https://reveal
   3. Start presentation
 
 
-    $ python -m http.server 8080 & xdg-open http://localhost:8080
+    $ python -m http.server 8080 & xdg-open http://localhost:8080; fg
 
 
 
