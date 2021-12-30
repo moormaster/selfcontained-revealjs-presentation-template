@@ -12,7 +12,7 @@ get_newest_version() {
 checkout_from_git() {
 	local version_tag=$1
 
-	if ! [ -d reveal.js.git]
+	if ! [ -d reveal.js.git ]
 	then
 		git clone ${GIT_URL} reveal.js.git
 	fi
