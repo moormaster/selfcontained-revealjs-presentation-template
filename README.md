@@ -21,7 +21,7 @@ This will create a *presentation.html* file containing [revealjs](https://reveal
 ## Alternative: Create single html file usable without webserver
 
   1. *Optional*: adapt single-file-presentation.html.j2 to your needs (css theme, revealjs-plugins, ...)
-  2. Edit *markdown.md* file containing presentation content (see [https://revealjs.com/markdown}(https://revealjs.com/markdown) )
+  2. Edit *markdown.md* file containing presentation content (see [https://revealjs.com/markdown](https://revealjs.com/markdown) )
   3. Generate *single-file-presentation.html*
 
     $ ./create_presentation.sh
