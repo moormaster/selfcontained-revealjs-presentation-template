@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Presentation</title>
+
+		<style>{{ read_file("reveal.js.git/dist/reveal.css") }}</style>
+		<style>{{ read_file("reveal.js.git/dist/theme/black.css") }}</style>
+		<style>{{ read_file("reveal.js.git/plugin/highlight/monokai.css") }}</style>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Use external markdown resource, separate slides by ---
+					vertical slides by --
+				-->
+				<section data-markdown data-separator="^\r?\n---\r?\n" data-separator-vertical="^\r?\n--\r?\n">{{ read_file("markdown.md") }}</section>
+		</div>
+
+		<script language="JavaScript">{{ read_file("reveal.js.git/dist/reveal.js") }}</script>
+		<script language="JavaScript">{{ read_file("reveal.js.git/plugin/markdown/markdown.js") }}</script>
+		<script language="JavaScript">{{ read_file("reveal.js.git/plugin/highlight/highlight.js") }}</script>
+		<script language="JavaScript">{{ read_file("reveal.js.git/plugin/notes/notes.js") }}</script>
+		<script language="JavaScript">{{ read_file("reveal.js.git/plugin/math/math.js") }}</script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>

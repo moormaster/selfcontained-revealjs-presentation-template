@@ -2,7 +2,9 @@
 
 GIT_URL=https://github.com/hakimel/reveal.js.git
 TEMPLATE_FILE=presentation.html.j2
+TEMPLATE_FOR_SINGLE_FILE=single-file-presentation.html.j2
 OUTPUT_FILE=presentation.html
+OUTPUT_SINGLE_FILE=single-file-presentation.html
 
 get_newest_version() {
 	# proudly stolen from https://wiki.archlinux.org/title/VCS_package_guidelines#The_pkgver()_function
@@ -38,3 +40,5 @@ render_template() {
 
 checkout_from_git
 render_template ${TEMPLATE_FILE} > ${OUTPUT_FILE}
+render_template ${TEMPLATE_FOR_SINGLE_FILE} > ${OUTPUT_SINGLE_FILE}
+
